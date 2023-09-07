@@ -41,7 +41,7 @@ function News(props) {
                 hasMore={articles.length !== totalResults}
                 loader={<DotsLoader />}
             >
-                <div className='mt-16 grid lg:grid-cols-3 md:grid-cols-2 gap-y-12 justify-items-center'>
+                <div className='mt-24 grid lg:grid-cols-3 md:grid-cols-2 gap-y-12 justify-items-center'>
                     {articles.map((element,index) => {
                         return <Newsitem key={index} title={element.title} description={element.description} newsUrl={element.url} imageUrl={element.urlToImage} publisher={element.source.name} author={element.author} date={element.publishedAt} />
                     })}
